@@ -13,17 +13,37 @@ function search(searchIconUrl) {
             position: "0px 0px",
             url: "https://www.baidu.com/s?wd="
         }, {
-            name: "谷歌",
-            img: "url(" + searchIconUrl + ")  -105px 0px",
-            position: "-40px 0px",
-            url: "https://www.google.com/search?q="
-        }, {
             name: "必应",
             img: "url(" + searchIconUrl + ")  -80px -25px",
             position: "0px -40px",
             url: "https://cn.bing.com/search?q="
         }, {
-            name: "好搜",
+            name: "谷歌",
+            img: "url(" + searchIconUrl + ")  -105px 0px",
+            position: "-40px 0px",
+            url: "https://www.google.com/search?q="
+        }, {
+            name: "GitHub",
+            img: "url(" + searchIconUrl + ") -80px -175px",
+            position: "0px -280px",
+            url: "https://github.com/search?utf8=✓&q="
+        }, {
+            name: "Stack Overflow",
+            img: "url(" + searchIconUrl + ") -105px -75px",
+            position: "-40px -120px",
+            url: "https://stackoverflow.com/nocaptcha?s="
+        }, {
+            name: "开发者搜索",
+            img: "url(" + searchIconUrl + ") -105px -50px",
+            position: "-40px -80px",
+            url: "https://kaifa.baidu.com/searchPage?wd="
+        }, {
+            name: "Yandex",
+            img: "url(" + searchIconUrl + ") -80px -100px",
+            position: "0px -160px",
+            url: "https://yandex.com/search/?text="
+        }, {
+            name: "360搜索",
             img: "url(" + searchIconUrl + ") -105px -25px",
             position: "-40px -40px",
             url: "https://www.so.com/s?q="
@@ -33,25 +53,10 @@ function search(searchIconUrl) {
             position: "0px -80px",
             url: "https://www.sogou.com/web?query="
         }, {
-            name: "淘宝",
-            img: "url(" + searchIconUrl + ") -105px -50px",
-            position: "-40px -80px",
-            url: "https://s.taobao.com/search?q="
-        }, {
-            name: "京东",
+            name: "Minecraft Wiki",
             img: "url(" + searchIconUrl + ") -80px -75px",
             position: "0px -120px",
-            url: "http://search.jd.com/Search?keyword="
-        }, {
-            name: "天猫",
-            img: "url(" + searchIconUrl + ") -105px -75px",
-            position: "-40px -120px",
-            url: "https://list.tmall.com/search_product.htm?q="
-        }, {
-            name: "1688",
-            img: "url(" + searchIconUrl + ") -80px -100px",
-            position: "0px -160px",
-            url: "https://s.1688.com/selloffer/offer_search.htm?keywords="
+            url: "https://minecraft.fandom.com/zh/wiki/Special:Search?query="
         }, {
             name: "知乎",
             img: "url(" + searchIconUrl + ") -105px -100px",
@@ -77,11 +82,6 @@ function search(searchIconUrl) {
             img: "url(" + searchIconUrl + ") -105px -150px",
             position: "-40px -240px",
             url: "https://so.youku.com/search_video/q_"
-        }, {
-            name: "GitHub",
-            img: "url(" + searchIconUrl + ") -80px -175px",
-            position: "0px -280px",
-            url: "https://github.com/search?utf8=✓&q="
         }]
     };
     var localSearchData = localStorage.getItem("searchData");
