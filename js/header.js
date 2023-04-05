@@ -42,11 +42,18 @@ function search(searchIconUrl) {
             img: "url(" + searchIconUrl + ") -80px -100px",
             position: "0px -160px",
             url: "https://yandex.com/search/?text="
-        }, {
-            name: "360搜索",
+        }, 
+        // {
+        //     name: "360搜索",
+        //     img: "url(" + searchIconUrl + ") -105px -25px",
+        //     position: "-40px -40px",
+        //     url: "https://www.so.com/s?q="
+        // }, 
+        {
+            name: "Phind",
             img: "url(" + searchIconUrl + ") -105px -25px",
             position: "-40px -40px",
-            url: "https://www.so.com/s?q="
+            url: "https://www.phind.com/search?source=searchbox&q="
         }, {
             name: "搜狗",
             img: "url(" + searchIconUrl + ") -80px -50px",
