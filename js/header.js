@@ -207,8 +207,10 @@ function search(searchIconUrl) {
         }, 250)
     });
     for (var i = 0; i < searchData.data.length; i++) {
-        $(".search-engine-list").append('<li><span style="background:' + searchData.data[i].img + (searchData.custom ? ' 0% 0% / cover no-repeat' : '') + '"/></span>' +
-            searchData.data[i].name + "</li>")
+        // $(".search-engine-list").append('<li><span style="background:' + searchData.data[i].img + (searchData.custom ? ' 0% 0% / cover no-repeat' : '') + '"/></span>' +
+        //     searchData.data[i].name + "</li>");
+        $(".search-engine-list").append('<li><span style="background: ' + searchData.data[i].img + '"/></span>' +
+            searchData.data[i].name + "</li>");
     }
     $(".search-icon, .search-engine").hover(function () {
         $(".search-engine").css("display", "block")
@@ -223,21 +225,24 @@ function search(searchIconUrl) {
     searchData.hotStatus ? $("#hot-btn").removeClass("off") : $("#hot-btn").addClass("off");
     $(".search-engine-list li").click(function () {
         var index = $(this).index();
-        searchData.thisSearchIcon = searchData.custom ? searchData.data[index].img : searchData.data[index].position;
-        if (searchData.custom) {
-            $(".search-icon").css("background", searchData.thisSearchIcon + ' no-repeat').css("background-size", 'cover');
-        } else {
-            $(".search-icon").css("background-position", searchData.thisSearchIcon);
-        }
+        // searchData.thisSearchIcon = searchData.custom ? searchData.data[index].img : searchData.data[index].position;
+        searchData.thisSearchIcon = searchData.data[index].position;
+        // if (searchData.custom) {
+        //     $(".search-icon").css("background", searchData.thisSearchIcon + ' no-repeat').css("background-size", 'cover');
+        // } else {
+        //     $(".search-icon").css("background-position", searchData.thisSearchIcon);
+        // }
+        $(".search-icon").css("background-position", searchData.thisSearchIcon);
         searchData.thisSearch = searchData.data[index].url;
         $(".search-engine").css("display", "none");
         localStorage.searchData = JSON.stringify(searchData)
     });
-    if (searchData.custom) {
-        $(".search-icon").css("background", searchData.thisSearchIcon + ' no-repeat').css("background-size", 'cover');
-    } else {
-        $(".search-icon").css("background-position", searchData.thisSearchIcon);
-    }
+    // if (searchData.custom) {
+    //     $(".search-icon").css("background", searchData.thisSearchIcon + ' no-repeat').css("background-size", 'cover');
+    // } else {
+    //     $(".search-icon").css("background-position", searchData.thisSearchIcon);
+    // }
+    $(".search-icon").css("background", searchData.thisSearchIcon);
     $("#search-btn").click(function () {
         var textValue = $("#txt").val();
         if (textValue) {
