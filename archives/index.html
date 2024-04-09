@@ -27,7 +27,7 @@
 
   <script>
     var userDefinedSearchData = {"custom":true,"thisSearch":"https://cn.bing.com/search?q=","thisSearchIcon":"url(./images/search_icon.png) 0px -40px","hotStatus":true,"data":[{"name":"百度","img":"url(./images/search_icon.png) -80px 0px","position":"0px 0px","url":"https://www.baidu.com/s?wd="},{"name":"必应","img":"url(./images/search_icon.png) -80px -25px","position":"0px -40px","url":"https://cn.bing.com/search?q="},{"name":"谷歌","img":"url(./images/search_icon.png) -105px 0px","position":"-40px 0px","url":"https://www.google.com/search?q="},{"name":"GitHub","img":"url(./images/search_icon.png) -80px -175px","position":"0px -280px","url":"https://github.com/search?utf8=✓&q="},{"name":"Stack Overflow","img":"url(./images/search_icon.png) -105px -75px","position":"-40px -120px","url":"https://stackoverflow.com/nocaptcha?s="},{"name":"开发者搜索","img":"url(./images/search_icon.png) -105px -50px","position":"-40px -80px","url":"https://kaifa.baidu.com/searchPage?wd="},{"name":"Yandex","img":"url(./images/search_icon.png) -80px -100px","position":"0px -160px","url":"https://yandex.com/search/?text="},{"name":"360搜索","img":"url(./images/search_icon.png) -105px -25px","position":"-40px -40px","url":"https://www.so.com/s?q="},{"name":"搜狗","img":"url(./images/search_icon.png) -80px -50px","position":"0px -80px","url":"https://www.sogou.com/web?query="},{"name":"Minecraft Wiki","img":"url(./images/search_icon.png) -80px -75px","position":"0px -120px","url":"https://minecraft.fandom.com/zh/wiki/Special:Search?query="},{"name":"知乎","img":"url(./images/search_icon.png) -105px -100px","position":"-40px -160px","url":"https://www.zhihu.com/search?type=content&q="},{"name":"微博","img":"url(./images/search_icon.png) -80px -125px","position":"0px -200px","url":"https://s.weibo.com/weibo/"},{"name":"B站","img":"url(./images/search_icon.png) -105px -125px","position":"-40px -200px","url":"http://search.bilibili.com/all?keyword="},{"name":"豆瓣","img":"url(./images/search_icon.png) -80px -150px","position":"0px -240px","url":"https://www.douban.com/search?source=suggest&q="},{"name":"优酷","img":"url(./images/search_icon.png) -105px -150px","position":"-40px -240px","url":"https://so.youku.com/search_video/q_"}]};
-    var expandAll = false;
+    var expandAll = true;
   </script>
   
 <script src="/NavigationPage/js/header.js"></script>
@@ -113,45 +113,29 @@
           
       </li>
       
-      <li class="">
-        
-          <a href="#博客论坛" class="smooth">
-            
-            <i class="fa fa-blog"></i>
-            <span class="title">博客论坛</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
-        
-          <a href="#在线工具" class="smooth">
-            
-            <i class="fa fa-bolt"></i>
-            <span class="title">在线工具</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
-        
-          <a href="#学习教育" class="smooth">
-            
-            <i class="fa fa-book"></i>
-            <span class="title">学习教育</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
+      <li class="expanded">
         
         <a class="fas fa-angle-down" style="cursor: pointer;">
           
             <i class="fa fa-briefcase"></i>
-            <span class="title">常用工具</span>
+            <span class="title">学习与工具</span>
           </a>
           
-          <ul style="display: none;">
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#在线工具" class="smooth">
+                <i class="fa fa-bolt"></i>
+                <span class="title">在线工具</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#学习教育" class="smooth">
+                <i class="fa fa-book"></i>
+                <span class="title">学习教育</span>
+              </a>
+            </li>
             
             <li>
               <a href="#代码托管" class="smooth">
@@ -178,43 +162,66 @@
           
       </li>
       
-      <li class="">
+      <li class="expanded">
         
-          <a href="#博客收藏" class="smooth">
-            
-            <i class="fa fa-bookmark"></i>
-            <span class="title">博客收藏</span>
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
+            <i class="fa fa-briefcase"></i>
+            <span class="title">创意与设计</span>
           </a>
+          
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#产品设计" class="smooth">
+                <i class="fa fa-palette"></i>
+                <span class="title">产品设计</span>
+              </a>
+            </li>
+            
+          </ul>
           
       </li>
       
-      <li class="">
+      <li class="expanded">
         
-          <a href="#产品设计" class="smooth">
-            
-            <i class="fa fa-palette"></i>
-            <span class="title">产品设计</span>
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
+            <i class="fa fa-briefcase"></i>
+            <span class="title">信息与娱乐</span>
           </a>
           
-      </li>
-      
-      <li class="">
-        
-          <a href="#新闻资讯" class="smooth">
+          <ul style="display: block;">
             
-            <i class="fa fa-newspaper"></i>
-            <span class="title">新闻资讯</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
-        
-          <a href="#休闲娱乐" class="smooth">
+            <li>
+              <a href="#新闻资讯" class="smooth">
+                <i class="fa fa-newspaper"></i>
+                <span class="title">新闻资讯</span>
+              </a>
+            </li>
             
-            <i class="fa fa-headphones"></i>
-            <span class="title">休闲娱乐</span>
-          </a>
+            <li>
+              <a href="#休闲娱乐" class="smooth">
+                <i class="fa fa-headphones"></i>
+                <span class="title">休闲娱乐</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#博客论坛" class="smooth">
+                <i class="fa fa-blog"></i>
+                <span class="title">博客论坛</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#博客收藏" class="smooth">
+                <i class="fa fa-bookmark"></i>
+                <span class="title">博客收藏</span>
+              </a>
+            </li>
+            
+          </ul>
           
       </li>
       

@@ -27,7 +27,7 @@
 
   <script>
     var userDefinedSearchData = {"custom":true,"thisSearch":"https://cn.bing.com/search?q=","thisSearchIcon":"url(./images/search_icon.png) 0px -40px","hotStatus":true,"data":[{"name":"百度","img":"url(./images/search_icon.png) -80px 0px","position":"0px 0px","url":"https://www.baidu.com/s?wd="},{"name":"必应","img":"url(./images/search_icon.png) -80px -25px","position":"0px -40px","url":"https://cn.bing.com/search?q="},{"name":"谷歌","img":"url(./images/search_icon.png) -105px 0px","position":"-40px 0px","url":"https://www.google.com/search?q="},{"name":"GitHub","img":"url(./images/search_icon.png) -80px -175px","position":"0px -280px","url":"https://github.com/search?utf8=✓&q="},{"name":"Stack Overflow","img":"url(./images/search_icon.png) -105px -75px","position":"-40px -120px","url":"https://stackoverflow.com/nocaptcha?s="},{"name":"开发者搜索","img":"url(./images/search_icon.png) -105px -50px","position":"-40px -80px","url":"https://kaifa.baidu.com/searchPage?wd="},{"name":"Yandex","img":"url(./images/search_icon.png) -80px -100px","position":"0px -160px","url":"https://yandex.com/search/?text="},{"name":"360搜索","img":"url(./images/search_icon.png) -105px -25px","position":"-40px -40px","url":"https://www.so.com/s?q="},{"name":"搜狗","img":"url(./images/search_icon.png) -80px -50px","position":"0px -80px","url":"https://www.sogou.com/web?query="},{"name":"Minecraft Wiki","img":"url(./images/search_icon.png) -80px -75px","position":"0px -120px","url":"https://minecraft.fandom.com/zh/wiki/Special:Search?query="},{"name":"知乎","img":"url(./images/search_icon.png) -105px -100px","position":"-40px -160px","url":"https://www.zhihu.com/search?type=content&q="},{"name":"微博","img":"url(./images/search_icon.png) -80px -125px","position":"0px -200px","url":"https://s.weibo.com/weibo/"},{"name":"B站","img":"url(./images/search_icon.png) -105px -125px","position":"-40px -200px","url":"http://search.bilibili.com/all?keyword="},{"name":"豆瓣","img":"url(./images/search_icon.png) -80px -150px","position":"0px -240px","url":"https://www.douban.com/search?source=suggest&q="},{"name":"优酷","img":"url(./images/search_icon.png) -105px -150px","position":"-40px -240px","url":"https://so.youku.com/search_video/q_"}]};
-    var expandAll = false;
+    var expandAll = true;
   </script>
   
 <script src="/NavigationPage/js/header.js"></script>
@@ -113,45 +113,29 @@
           
       </li>
       
-      <li class="">
-        
-          <a href="#博客论坛" class="smooth">
-            
-            <i class="fa fa-blog"></i>
-            <span class="title">博客论坛</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
-        
-          <a href="#在线工具" class="smooth">
-            
-            <i class="fa fa-bolt"></i>
-            <span class="title">在线工具</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
-        
-          <a href="#学习教育" class="smooth">
-            
-            <i class="fa fa-book"></i>
-            <span class="title">学习教育</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
+      <li class="expanded">
         
         <a class="fas fa-angle-down" style="cursor: pointer;">
           
             <i class="fa fa-briefcase"></i>
-            <span class="title">常用工具</span>
+            <span class="title">学习与工具</span>
           </a>
           
-          <ul style="display: none;">
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#在线工具" class="smooth">
+                <i class="fa fa-bolt"></i>
+                <span class="title">在线工具</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#学习教育" class="smooth">
+                <i class="fa fa-book"></i>
+                <span class="title">学习教育</span>
+              </a>
+            </li>
             
             <li>
               <a href="#代码托管" class="smooth">
@@ -178,43 +162,66 @@
           
       </li>
       
-      <li class="">
+      <li class="expanded">
         
-          <a href="#博客收藏" class="smooth">
-            
-            <i class="fa fa-bookmark"></i>
-            <span class="title">博客收藏</span>
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
+            <i class="fa fa-briefcase"></i>
+            <span class="title">创意与设计</span>
           </a>
+          
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#产品设计" class="smooth">
+                <i class="fa fa-palette"></i>
+                <span class="title">产品设计</span>
+              </a>
+            </li>
+            
+          </ul>
           
       </li>
       
-      <li class="">
+      <li class="expanded">
         
-          <a href="#产品设计" class="smooth">
-            
-            <i class="fa fa-palette"></i>
-            <span class="title">产品设计</span>
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
+            <i class="fa fa-briefcase"></i>
+            <span class="title">信息与娱乐</span>
           </a>
           
-      </li>
-      
-      <li class="">
-        
-          <a href="#新闻资讯" class="smooth">
+          <ul style="display: block;">
             
-            <i class="fa fa-newspaper"></i>
-            <span class="title">新闻资讯</span>
-          </a>
-          
-      </li>
-      
-      <li class="">
-        
-          <a href="#休闲娱乐" class="smooth">
+            <li>
+              <a href="#新闻资讯" class="smooth">
+                <i class="fa fa-newspaper"></i>
+                <span class="title">新闻资讯</span>
+              </a>
+            </li>
             
-            <i class="fa fa-headphones"></i>
-            <span class="title">休闲娱乐</span>
-          </a>
+            <li>
+              <a href="#休闲娱乐" class="smooth">
+                <i class="fa fa-headphones"></i>
+                <span class="title">休闲娱乐</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#博客论坛" class="smooth">
+                <i class="fa fa-blog"></i>
+                <span class="title">博客论坛</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#博客收藏" class="smooth">
+                <i class="fa fa-bookmark"></i>
+                <span class="title">博客收藏</span>
+              </a>
+            </li>
+            
+          </ul>
           
       </li>
       
@@ -421,179 +428,6 @@
     
     
     
-    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="博客论坛"></i>博客论坛</h4>
-<div class="row">
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://stackoverflow.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://stackoverflow.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/stackoverflow.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>Stack Overflow</strong>
-          </a>
-          <p class="overflowClip_2">全球最受程序员欢迎的开发社区</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.csdn.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.csdn.net/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/csdn_logo.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>CSDN</strong>
-          </a>
-          <p class="overflowClip_2">全球最大中文IT社区,为IT专业技术人员提供最全面的信息传播和服务平台</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.cnblogs.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.cnblogs.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/cnblogs_logo.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>博客园</strong>
-          </a>
-          <p class="overflowClip_2">代码改变世界</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://juejin.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://juejin.cn/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/juejin_logo.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>稀土掘金</strong>
-          </a>
-          <p class="overflowClip_2">一个帮助开发者成长的社区</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.51cto.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.51cto.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/51cto.ico" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>51CTO-中国领先的IT技术网站</strong>
-          </a>
-          <p class="overflowClip_2">全球最受程序员欢迎的开发社区</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.oschina.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.oschina.net/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/openchina_logo.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>OSCHINA - 中文开源技术交流社区</strong>
-          </a>
-          <p class="overflowClip_2">OSCHINA.NET 是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.jianshu.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.jianshu.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/jianshu.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>简书 - 创作你的创作</strong>
-          </a>
-          <p class="overflowClip_2">简书是一个优质的创作社区，在这里，你可以任性地创作，一篇短文、一张照片、一首诗、一幅画……我们相信，每个人都是生活中的艺术家，有着无穷的创造力。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.52pojie.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.52pojie.cn/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/52pojie.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>吾爱破解 - LCG - LSG|安卓破解|病毒分析|www.52pojie.cn</strong>
-          </a>
-          <p class="overflowClip_2">吾爱破解论坛致力于软件安全与病毒分析的前沿,丰富的技术版块交相辉映,由无数热衷于软件加密解密及反病毒爱好者共同维护</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.mcbbs.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.mcbbs.net/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/bbs_big.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>Minecraft(我的世界)中文论坛 - Minecraft中文站,我的世界中文论坛,我的世界论坛</strong>
-          </a>
-          <p class="overflowClip_2">最大的《Minecraft》(我的世界)玩家创造、研究、交流学习和分享的专业中文社交平台!这里你可以找到最新最好玩的整合包、Mod,最炫酷的皮肤、材质包,以及各种我的世界最新的资讯,与其他人一起交流你的游戏心得。想了解我的世界怎么玩？在这里你可以找到各路高手分享的游戏心得与教程。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://bbs.mihoyo.com/ys/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://bbs.mihoyo.com/ys/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/ys_bbs_mihoyo.ico" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>原神社区-米游社</strong>
-          </a>
-          <p class="overflowClip_2">米游社-原神社区是米哈游miHoYo旗下原神游戏玩家社区，这里集合了原神游戏玩家互动，官方资讯、福利趣闻和同人作品，踏入充满冒险的神奇世界 - 米哈游原神</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-<br />
-
-    
-    
-    
-    
-    
-    
-    
     <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="在线工具"></i>在线工具</h4>
 <div class="row">
   
@@ -678,6 +512,22 @@
   </div>
   
   <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://metaso.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://metaso.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/metaso.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>秘塔AI搜索</strong>
+          </a>
+          <p class="overflowClip_2">秘塔AI搜索，没有广告，直达结果</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://search.fuyeor.com/zh-cn/Google', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://search.fuyeor.com/zh-cn/Google">
       <div class="xe-comment-entry">
         <a class="xe-user-img">
@@ -752,38 +602,6 @@
             <strong>ChatGPT</strong>
           </a>
           <p class="overflowClip_2">We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://chat1.zhile.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://chat1.zhile.io/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/openai.ico" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>Pandora ChatGPT</strong>
-          </a>
-          <p class="overflowClip_2">A conversational AI system that listens, learns, and challenges</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://chat-shared3.zhile.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://chat-shared3.zhile.io/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>免费的共享ChatGPT账号</strong>
-          </a>
-          <p class="overflowClip_2">潘多拉, 一个让你呼吸顺畅的ChatGPT.https://github.com/pengzhile/pandora</p>
         </div>
       </div>
     </div>
@@ -1868,9 +1686,6 @@
     
     
     
-    
-    
-    
     <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="学习教育"></i>学习教育</h4>
 <div class="row">
   
@@ -2450,12 +2265,25 @@
     </div>
   </div>
   
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://bibleeveryone.com/index.php', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://bibleeveryone.com/index.php">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/bibleeveryone.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>聖經共享</strong>
+          </a>
+          <p class="overflowClip_2">聖經知識網站 (內容持續增新) -- 提供大量圖片、時間軸及地圖，協助信徒對聖經認識更深。也歡迎教牧使用免費圖像以支援事奉。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
 <br />
 
-    
-    
-    
     
     
     
@@ -3086,387 +2914,6 @@
     
     
     
-    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="博客收藏"></i>博客收藏</h4>
-<div class="row">
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://zhblogs.ohyee.cc/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zhblogs.ohyee.cc/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/zhblogs.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>中文博客列表导航</strong>
-          </a>
-          <p class="overflowClip_2">尝试链接几乎所有的中文博客</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://www.alloyteam.com/nav/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.alloyteam.com/nav/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/alloyteam.jpg" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>Web前端导航</strong>
-          </a>
-          <p class="overflowClip_2">Web前端导航网站</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.126yun.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.126yun.cn/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/126yun.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>126云导航 - 最好用的浏览器主页</strong>
-          </a>
-          <p class="overflowClip_2">最好用的浏览器主页,拒绝流氓主页</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.kuangstudy.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.kuangstudy.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/kuangstudy.jpg" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>KuangStudy</strong>
-          </a>
-          <p class="overflowClip_2">KuangStudy是一个致力于为每个想学习知识的人提供一个少走弯路的平台,包含优质体系课程、文章博客、专栏书写、技术论坛、资源下载等产品服务,提供有用、优质、完整内容的自学交流社区.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.liaoxuefeng.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.liaoxuefeng.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>廖雪峰的官方网站</strong>
-          </a>
-          <p class="overflowClip_2">研究互联网产品和技术,提供原创中文精品教程</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.ruanyifeng.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.ruanyifeng.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>阮一峰的个人网站 - Ruan YiFeng&#39;s Personal Website</strong>
-          </a>
-          <p class="overflowClip_2">阮一峰的个人网站</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.algomooc.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.algomooc.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/algomooc.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>AlgoMooc算法慕课网_采取看动画的形式刷 LeetCode 通过算法面试！</strong>
-          </a>
-          <p class="overflowClip_2">看动画,学算法,认准吴师兄,和吴师兄一起学算法。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://wangxj2020.gitee.io/hexo/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://wangxj2020.gitee.io/hexo/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="http://wangxj2020.gitee.io/hexo/favicon.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>wangxj2020</strong>
-          </a>
-          <p class="overflowClip_2">wangxj2020</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://blog.hclonely.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://blog.hclonely.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/hclonelyBlog.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>HCLonely Blog</strong>
-          </a>
-          <p class="overflowClip_2">一个懒人的博客。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://luckyzmj.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://luckyzmj.cn/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/LuckySec.jpg" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>LuckySec</strong>
-          </a>
-          <p class="overflowClip_2">LuckySecの博客</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.moyuzc.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.moyuzc.cn/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/moyuzc.jpg" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>张小驰出没</strong>
-          </a>
-          <p class="overflowClip_2">Welcome to my world</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://blog.imgchr.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://blog.imgchr.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>路过图床站长日志</strong>
-          </a>
-          <p class="overflowClip_2">路过图床站长日志, 点滴记录网站发展</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://wangchujiang.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://wangchujiang.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/wangchujiang.ico" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>小弟调调™</strong>
-          </a>
-          <p class="overflowClip_2">小弟调调™ - (͡·̮̃·̃) 撸码的乐趣 💯 ，“人没了，™代码还在”</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.freedidi.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.freedidi.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>零度解說 - 零度博客</strong>
-          </a>
-          <p class="overflowClip_2">零度博客</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://hellogithub.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://hellogithub.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/hellogithub.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>HelloGitHub</strong>
-          </a>
-          <p class="overflowClip_2">分享 GitHub 上有趣、入门级的开源项目</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.ddkk.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.ddkk.com/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/ddkk.ico" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>弟弟快看-教程，程序员编程资料站 | DDKK.COM</strong>
-          </a>
-          <p class="overflowClip_2">弟弟快看-教程，内容覆盖、Java核心、J2EE框架、ORM框架、前端框架、安全框架、API网关、消息队列、作业调度、注册中心、配置中心、链路追踪、服务保障、搜索引擎、容器服务、开发工具、监控工具、设计模式、架构设计、工作流框架、服务器框架、大数据框架、分布式事务、缓存-数据库、数据库连接池、数据库中间件、XML语言教程、等技术栈</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://someget.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://someget.cn/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/someget_2.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>没有气的汽水</strong>
-          </a>
-          <p class="overflowClip_2">没有气的汽水</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://knightyun.github.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://knightyun.github.io/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="https://knightyun.github.io/assets/img/user.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>瑝琦的博客</strong>
-          </a>
-          <p class="overflowClip_2">基于 jekyll 的 Github Pages 个人博客网站，技术的学习、总结、分享与提升</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.cnblogs.com/miluluyo/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.cnblogs.com/miluluyo/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/cnblogs_miluluyo.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>麋鹿鲁哟 - 博客园</strong>
-          </a>
-          <p class="overflowClip_2">麋鹿鲁哟 - 博客园</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://lonelyrookie.github.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://lonelyrookie.github.io/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/lonelyrookie.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>Huang CanCan的博客 | BY Blog</strong>
-          </a>
-          <p class="overflowClip_2">Every failure is leading towards success.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://oldj.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://oldj.net/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/oldj.ico" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>oldj&#39;s blog</strong>
-          </a>
-          <p class="overflowClip_2">oldj&#39;s blog</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.thotz.top/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.thotz.top/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/thotz.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>SuYi-宿仪_-_随心写作，随缘阅读</strong>
-          </a>
-          <p class="overflowClip_2">这里是个人博客网站，你可以在这里找到很多新兴元素、互联网资源分享、学习笔记记录，更多的详情请点击后观看。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-3">
-    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://alanwu.cc/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://alanwu.cc/">
-      <div class="xe-comment-entry">
-        <a class="xe-user-img">
-          <img data-src="/NavigationPage/images/logos/alanwu.png" class="lozad img-circle" width="40">
-        </a>
-        <div class="xe-comment">
-          <a href="#" class="xe-user-name overflowClip_1">
-            <strong>Alan明宇&#39;s Blog</strong>
-          </a>
-          <p class="overflowClip_2">Alan明宇&#39;s Blog，记录Everything</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</div>
-<br />
-
-    
-    
-    
-    
-    
-    
-    
     <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="产品设计"></i>产品设计</h4>
 <div class="row">
   
@@ -3656,6 +3103,7 @@
     
     
     
+    
     <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="新闻资讯"></i>新闻资讯</h4>
 <div class="row">
   
@@ -3710,9 +3158,6 @@
 </div>
 <br />
 
-    
-    
-    
     
     
     
@@ -4139,6 +3584,555 @@
 </div>
 <br />
 
+    
+    
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="博客论坛"></i>博客论坛</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://stackoverflow.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://stackoverflow.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/stackoverflow.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Stack Overflow</strong>
+          </a>
+          <p class="overflowClip_2">全球最受程序员欢迎的开发社区</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.csdn.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.csdn.net/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/csdn_logo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>CSDN</strong>
+          </a>
+          <p class="overflowClip_2">全球最大中文IT社区,为IT专业技术人员提供最全面的信息传播和服务平台</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.cnblogs.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.cnblogs.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/cnblogs_logo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>博客园</strong>
+          </a>
+          <p class="overflowClip_2">代码改变世界</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://juejin.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://juejin.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/juejin_logo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>稀土掘金</strong>
+          </a>
+          <p class="overflowClip_2">一个帮助开发者成长的社区</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.51cto.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.51cto.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/51cto.ico" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>51CTO-中国领先的IT技术网站</strong>
+          </a>
+          <p class="overflowClip_2">全球最受程序员欢迎的开发社区</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.oschina.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.oschina.net/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/openchina_logo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>OSCHINA - 中文开源技术交流社区</strong>
+          </a>
+          <p class="overflowClip_2">OSCHINA.NET 是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.jianshu.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.jianshu.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/jianshu.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>简书 - 创作你的创作</strong>
+          </a>
+          <p class="overflowClip_2">简书是一个优质的创作社区，在这里，你可以任性地创作，一篇短文、一张照片、一首诗、一幅画……我们相信，每个人都是生活中的艺术家，有着无穷的创造力。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.52pojie.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.52pojie.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/52pojie.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>吾爱破解 - LCG - LSG|安卓破解|病毒分析|www.52pojie.cn</strong>
+          </a>
+          <p class="overflowClip_2">吾爱破解论坛致力于软件安全与病毒分析的前沿,丰富的技术版块交相辉映,由无数热衷于软件加密解密及反病毒爱好者共同维护</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.mcbbs.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.mcbbs.net/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/bbs_big.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Minecraft(我的世界)中文论坛 - Minecraft中文站,我的世界中文论坛,我的世界论坛</strong>
+          </a>
+          <p class="overflowClip_2">最大的《Minecraft》(我的世界)玩家创造、研究、交流学习和分享的专业中文社交平台!这里你可以找到最新最好玩的整合包、Mod,最炫酷的皮肤、材质包,以及各种我的世界最新的资讯,与其他人一起交流你的游戏心得。想了解我的世界怎么玩？在这里你可以找到各路高手分享的游戏心得与教程。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://bbs.mihoyo.com/ys/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://bbs.mihoyo.com/ys/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/ys_bbs_mihoyo.ico" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>原神社区-米游社</strong>
+          </a>
+          <p class="overflowClip_2">米游社-原神社区是米哈游miHoYo旗下原神游戏玩家社区，这里集合了原神游戏玩家互动，官方资讯、福利趣闻和同人作品，踏入充满冒险的神奇世界 - 米哈游原神</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+
+    
+    
+    
+    
+    <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="博客收藏"></i>博客收藏</h4>
+<div class="row">
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://zhblogs.ohyee.cc/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zhblogs.ohyee.cc/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/zhblogs.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>中文博客列表导航</strong>
+          </a>
+          <p class="overflowClip_2">尝试链接几乎所有的中文博客</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://www.alloyteam.com/nav/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.alloyteam.com/nav/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/alloyteam.jpg" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Web前端导航</strong>
+          </a>
+          <p class="overflowClip_2">Web前端导航网站</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.126yun.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.126yun.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/126yun.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>126云导航 - 最好用的浏览器主页</strong>
+          </a>
+          <p class="overflowClip_2">最好用的浏览器主页,拒绝流氓主页</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.kuangstudy.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.kuangstudy.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/kuangstudy.jpg" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>KuangStudy</strong>
+          </a>
+          <p class="overflowClip_2">KuangStudy是一个致力于为每个想学习知识的人提供一个少走弯路的平台,包含优质体系课程、文章博客、专栏书写、技术论坛、资源下载等产品服务,提供有用、优质、完整内容的自学交流社区.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.liaoxuefeng.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.liaoxuefeng.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>廖雪峰的官方网站</strong>
+          </a>
+          <p class="overflowClip_2">研究互联网产品和技术,提供原创中文精品教程</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.ruanyifeng.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.ruanyifeng.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>阮一峰的个人网站 - Ruan YiFeng&#39;s Personal Website</strong>
+          </a>
+          <p class="overflowClip_2">阮一峰的个人网站</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.algomooc.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.algomooc.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/algomooc.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>AlgoMooc算法慕课网_采取看动画的形式刷 LeetCode 通过算法面试！</strong>
+          </a>
+          <p class="overflowClip_2">看动画,学算法,认准吴师兄,和吴师兄一起学算法。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://wangxj2020.gitee.io/hexo/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://wangxj2020.gitee.io/hexo/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="http://wangxj2020.gitee.io/hexo/favicon.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>wangxj2020</strong>
+          </a>
+          <p class="overflowClip_2">wangxj2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://blog.hclonely.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://blog.hclonely.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/hclonelyBlog.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>HCLonely Blog</strong>
+          </a>
+          <p class="overflowClip_2">一个懒人的博客。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://luckyzmj.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://luckyzmj.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/LuckySec.jpg" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>LuckySec</strong>
+          </a>
+          <p class="overflowClip_2">LuckySecの博客</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.moyuzc.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.moyuzc.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/moyuzc.jpg" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>张小驰出没</strong>
+          </a>
+          <p class="overflowClip_2">Welcome to my world</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://blog.imgchr.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://blog.imgchr.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>路过图床站长日志</strong>
+          </a>
+          <p class="overflowClip_2">路过图床站长日志, 点滴记录网站发展</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://wangchujiang.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://wangchujiang.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/wangchujiang.ico" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>小弟调调™</strong>
+          </a>
+          <p class="overflowClip_2">小弟调调™ - (͡·̮̃·̃) 撸码的乐趣 💯 ，“人没了，™代码还在”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.freedidi.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.freedidi.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/default.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>零度解說 - 零度博客</strong>
+          </a>
+          <p class="overflowClip_2">零度博客</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://hellogithub.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://hellogithub.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/hellogithub.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>HelloGitHub</strong>
+          </a>
+          <p class="overflowClip_2">分享 GitHub 上有趣、入门级的开源项目</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.ddkk.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.ddkk.com/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/ddkk.ico" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>弟弟快看-教程，程序员编程资料站 | DDKK.COM</strong>
+          </a>
+          <p class="overflowClip_2">弟弟快看-教程，内容覆盖、Java核心、J2EE框架、ORM框架、前端框架、安全框架、API网关、消息队列、作业调度、注册中心、配置中心、链路追踪、服务保障、搜索引擎、容器服务、开发工具、监控工具、设计模式、架构设计、工作流框架、服务器框架、大数据框架、分布式事务、缓存-数据库、数据库连接池、数据库中间件、XML语言教程、等技术栈</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://someget.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://someget.cn/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/someget_2.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>没有气的汽水</strong>
+          </a>
+          <p class="overflowClip_2">没有气的汽水</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://knightyun.github.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://knightyun.github.io/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/knightyun.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>瑝琦的博客</strong>
+          </a>
+          <p class="overflowClip_2">基于 jekyll 的 Github Pages 个人博客网站，技术的学习、总结、分享与提升</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.cnblogs.com/miluluyo/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.cnblogs.com/miluluyo/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/cnblogs_miluluyo.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>麋鹿鲁哟 - 博客园</strong>
+          </a>
+          <p class="overflowClip_2">麋鹿鲁哟 - 博客园</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://lonelyrookie.github.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://lonelyrookie.github.io/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/lonelyrookie.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Huang CanCan的博客 | BY Blog</strong>
+          </a>
+          <p class="overflowClip_2">Every failure is leading towards success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://oldj.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://oldj.net/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/oldj.ico" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>oldj&#39;s blog</strong>
+          </a>
+          <p class="overflowClip_2">oldj&#39;s blog</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.thotz.top/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.thotz.top/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/thotz.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>SuYi-宿仪_-_随心写作，随缘阅读</strong>
+          </a>
+          <p class="overflowClip_2">这里是个人博客网站，你可以在这里找到很多新兴元素、互联网资源分享、学习笔记记录，更多的详情请点击后观看。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3">
+    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://alanwu.cc/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://alanwu.cc/">
+      <div class="xe-comment-entry">
+        <a class="xe-user-img">
+          <img data-src="/NavigationPage/images/logos/alanwu.png" class="lozad img-circle" width="40">
+        </a>
+        <div class="xe-comment">
+          <a href="#" class="xe-user-name overflowClip_1">
+            <strong>Alan明宇&#39;s Blog</strong>
+          </a>
+          <p class="overflowClip_2">Alan明宇&#39;s Blog，记录Everything</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+
+    
     
     
     
